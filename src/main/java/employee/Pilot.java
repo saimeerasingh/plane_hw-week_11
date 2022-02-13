@@ -1,12 +1,20 @@
 package employee;
 
 public class Pilot extends Employee {
-    EmployeeRank employeerank;
+
     private String pilotLicenseNumber;
 
-    public Pilot(String name, String pilotLicenseNumber, EmployeeRank employeerank) {
-        super(name);
+    public Pilot(String name,EmployeeRank employeeRank, String pilotLicenseNumber) {
+        super(name,employeeRank);
         this.pilotLicenseNumber = pilotLicenseNumber;
-        this.employeerank = employeerank;
+
+    }
+
+    public String getPilotLicenseNumber() {
+        return pilotLicenseNumber;
+    }
+
+    public void setPilotLicenseNumber(String pilotLicenseNumber) {
+        this.pilotLicenseNumber = pilotLicenseNumber;
     }
 }
