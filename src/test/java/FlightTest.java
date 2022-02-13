@@ -43,6 +43,17 @@ public class FlightTest {
 
     @Test
     public void hasPilot(){
-        assertTrue("5 is greater the 4", 5 > 4);
+        assertTrue("there should be at least 1 pilot", flight.getPilots().size() > 0);
+    }
+
+    @Test
+    public void hasCabinCrewMember(){
+        assertTrue("there should be more than 1 cabin crew member", flight.getCabinCrewMembers().size()> 1);
+    }
+
+    @Test
+    public void canAddPassenger(){
+        flight.addPassengers("Shaank",4);
+        assertEquals(1,flight.getPassengers().size());
     }
 }

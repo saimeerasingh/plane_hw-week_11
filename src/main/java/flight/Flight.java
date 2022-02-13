@@ -54,12 +54,9 @@ public class Flight {
     }
 
     public void addPassengers(String passengerName, int numberOfBags) {
-//            TODO
+            this.passengers.add(new Passenger(passengerName,numberOfBags));
     }
 
-    public void removePassenger(String passengerName){
-// TODO
-    }
 
     public Plane getPlane() {
         return plane;
