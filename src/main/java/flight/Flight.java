@@ -78,18 +78,16 @@ public class Flight {
         return departureTime;
     }
     public int getAvailableSeats(){
-            return 0;
-          //TODO
+            return this.seats - this.passengers.size();
     }
 
     public String takeOff(){
-            return "";
-//            TODO
+            return this.pilots.get(0).flyThePlane();
     }
 
     public String sendAnnouncements(){
-            return "";
-//            TODO
+            return this.cabinCrewMembers.get(0).sendAnnouncements();
+
     }
 
 }

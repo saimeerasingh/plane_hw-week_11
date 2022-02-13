@@ -17,4 +17,8 @@ public class Pilot extends Employee {
     public void setPilotLicenseNumber(String pilotLicenseNumber) {
         this.pilotLicenseNumber = pilotLicenseNumber;
     }
+
+    public String flyThePlane(){
+        return "not Vroom Vroom but Shooosshhh";
+    }
 }

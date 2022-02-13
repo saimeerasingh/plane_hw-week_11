@@ -8,4 +8,8 @@ public class CabinCrewMember extends Employee {
 
     }
 
+    public String sendAnnouncements(){
+        return "Please fasten your seatbelts";
+    }
+
 }

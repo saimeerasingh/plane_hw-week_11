@@ -56,4 +56,20 @@ public class FlightTest {
         flight.addPassengers("Shaank",4);
         assertEquals(1,flight.getPassengers().size());
     }
+
+    @Test
+    public void canGetAvailableSeats(){
+        flight.addPassengers("Shaank",6);
+        assertEquals(339,flight.getAvailableSeats());
+    }
+
+    @Test
+    public void canTakeOff(){
+        assertEquals("not Vroom Vroom but Shooosshhh", flight.takeOff());
+    }
+
+    @Test
+    public void canSendAnnouncements(){
+        assertEquals("Please fasten your seatbelts", flight.sendAnnouncements());
+    }
 }
