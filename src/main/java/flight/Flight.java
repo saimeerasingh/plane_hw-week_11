@@ -17,10 +17,11 @@ public class Flight {
    private String destination;
    private String departureAirport;
    private String departureTime;
+   private int seats;
 
         public Flight(ArrayList<Pilot> pilots, ArrayList<CabinCrewMember> cabinCrewMembers,
                       Plane plane, String flightNumber,
-                      String destination, String departureAirport, String departureTime) {
+                      String destination, String departureAirport, String departureTime,int seats) {
         this.pilots = pilots;
         this.cabinCrewMembers = cabinCrewMembers;
         this.passengers = new ArrayList<>();
@@ -29,7 +30,69 @@ public class Flight {
         this.destination = destination;
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
+        this.seats = seats;
     }
-    
+
+    public ArrayList<Pilot> getPilots() {
+        return pilots;
+    }
+
+    public void setPilots(ArrayList<Pilot> pilots) {
+        this.pilots = pilots;
+    }
+
+    public ArrayList<CabinCrewMember> getCabinCrewMembers() {
+        return cabinCrewMembers;
+    }
+
+    public void setCabinCrewMembers(ArrayList<CabinCrewMember> cabinCrewMembers) {
+        this.cabinCrewMembers = cabinCrewMembers;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public void addPassengers(String passengerName, int numberOfBags) {
+//            TODO
+    }
+
+    public void removePassenger(String passengerName){
+// TODO
+    }
+
+    public Plane getPlane() {
+        return plane;
+    }
+
+    public String getFlightNumber() {
+        return flightNumber;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public String getDepartureAirport() {
+        return departureAirport;
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+    public int getAvailableSeats(){
+            return 0;
+          //TODO
+    }
+
+    public String takeOff(){
+            return "";
+//            TODO
+    }
+
+    public String sendAnnouncements(){
+            return "";
+//            TODO
+    }
 
 }
