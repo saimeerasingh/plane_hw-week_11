@@ -8,4 +8,20 @@ public abstract class Employee {
         this.name = name;
         this.employeeRank = employeeRank;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public EmployeeRank getEmployeeRank() {
+        return employeeRank;
+    }
+
+    public void setEmployeeRank(EmployeeRank employeeRank) {
+        this.employeeRank = employeeRank;
+    }
 }
